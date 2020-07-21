@@ -1,0 +1,38 @@
+{
+    "name": "config-eslint-prettier-format",
+    "version": "1.0.0",
+    "description": "config-eslint-prettier-format",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dericktang/config-eslint-prettier-format.git"
+    },
+    "keywords": [
+        "eslint",
+        "prettier"
+    ],
+    "author": "dericktang",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dericktang/config-eslint-prettier-format/issues"
+    },
+    "homepage": "https://github.com/dericktang/config-eslint-prettier-format#readme",
+    "devDependencies": {
+        "conventional-changelog-cli": "^2.0.34",
+        "cz-conventional-changelog": "^3.2.0",
+        "verify-commit": "^1.0.0",
+        "yorkie": "^2.0.0"
+    },
+    "gitHooks": {
+        "commit-msg": "node ./node_modules/verify-commit/index.js"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
